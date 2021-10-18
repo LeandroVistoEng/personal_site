@@ -1,0 +1,82 @@
+/* HEIGHT 100% */
+html, body {
+    height: 100%;
+}
+.bloco {
+    min-height: 100%;
+    padding-top: 94px;
+}
+
+/* COLORS */
+.blue-logo {
+    background-color: #2dc7d0;
+}
+
+/* LOGO */
+.logo_text {
+    font-size: 0; margin: 0;
+}
+.logo_img {
+    width: 100px; margin-top: 15px;
+}
+
+/* MENU */
+.navbar {
+    background-color: transparent;
+    transition: background 0.5s linear;
+}
+.navbar ul a:hover {
+    background-color: transparent;
+    color: #2dc7d0;
+}
+.nav-color {
+    background-color: rgba(0,0,0,0.7);
+    transition: background 0.5s linear;
+    }
+
+/*HOME*/
+.home {
+    animation: mudarbg 15s infinite; 
+    background-image: url('../img/bg.jpg');
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+/* HOME - ANIMATION */
+@keyframes mudarbg {
+    40%  {background-image: url('../img/bg2.jpg');}
+    80%  {background-image: url('../img/bg3.jpg');}
+    100% {background-image: url('../img/bg.jpg');}
+}
+
+.banner h2 {
+    font-size: 2.5rem;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+.banner p {
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+}
+
+/*MEDIA*/
+
+@media only screen and (max-width: 480px) {
+
+}
+@media only screen and (min-width: 601px) {
+    .banner {
+        padding-top: 4.5rem;
+    }
+    .banner h2 {
+        font-size: 4rem;
+    }
+}
+
+@media only screen and (min-width: 993px) {
+    .banner {
+        padding-top: 5rem;
+    }
+    .banner h2 {
+        font-size: 5rem;
+    }
+}
