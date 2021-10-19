@@ -440,7 +440,7 @@
                     <p class="light">Dúvidas, criticas ou sujestões? Entre em contato conosco,
                         seu feedback é muito importante.
                     </p>
-                    <form action="" method="POST">
+                    <form action="enviar-email.php" method="POST">
                         <div class="input-field">
                             <input type="text" name="name" id="name">
                             <label for="name">Seu nome</label>
@@ -581,6 +581,17 @@
                 $(".navbar").removeClass("nav-color");
             }
         });
+    </script>
+    <script>
+        <?php
+        //Configuração para envio de email:
+        if(isset($_GET['status'])):
+            if($_GET['status'] == "sucesso"):
+            echo "<script>Materialize.toast('Enviado com Sucesso!', 4000;</script>";
+            else:
+            echo "<script>Materialize.toast('erro ao Enviar!', 4000;</script>";
+            endif;
+        ?>
     </script>
 </body>
 
